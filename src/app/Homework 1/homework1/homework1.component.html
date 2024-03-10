@@ -1,0 +1,17 @@
+<div class="body">
+  <h2>HomeWork 1</h2>
+  <div class="wrapper">
+    <div class="box" *ngFor="let user of users" [appNgStyle]="{
+      border: user.isActive ? '2px solid green' : '2px solid red'
+    }">
+      <p>FirstName: {{user.firstName}}</p>
+      <p>LastName: {{user.lastName}}</p>
+      <p>IsActive: {{user.isActive}}</p>
+      <p>Role: {{user.role}}</p>
+      <p *appNgIf="!user.isActive">This user is not active!</p>
+      <div *appNgIf="user.role === 'Admin'">
+        <button class="btn" type="button">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
