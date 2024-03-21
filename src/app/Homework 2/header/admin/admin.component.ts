@@ -24,7 +24,7 @@ export class AdminComponent {
   status: string = 'Active';
 
   CreateNewUser() {
-    if (!this.name.match(/[a-z A-Z]/)) {
+    if (this.name === '') {
       alert('Please, fill in UserName Field!');
     } else {
       this.userService.CreateUser(
