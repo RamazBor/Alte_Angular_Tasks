@@ -1,0 +1,30 @@
+.header-container {
+  max-width: 600px;
+  min-height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-logo {
+    font-weight: bold;
+    font-size: 26px;
+  }
+  .header-nav {
+    a {
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+      &.active {
+        border-bottom: 1px solid red;
+      }
+    }
+    button {
+      padding: 7px 15px;
+      background-color: #1f173b;
+      color: #ededed;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+  }
+}

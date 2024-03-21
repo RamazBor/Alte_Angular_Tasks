@@ -1,0 +1,24 @@
+<div class="header-container">
+  <div class="header-logo">TASK 2</div>
+  <div class="header-nav">
+    <a
+      href="#"
+      (click)="HomeClicked()"
+      [ngStyle]="{'borderBottom': selectedTab == 'home' ? '2px solid red' : '', }"
+      >HOME</a
+    >
+    <a
+      href="#"
+      (click)="AdminClicked()"
+      [ngStyle]="{'borderBottom': selectedTab == 'admin' ? '2px solid red' : '', }"
+      >ADMIN</a
+    >
+    <button class="header-button" (click)="OnSubscribe()">
+      SUBSCRIBE MONTHLY
+    </button>
+  </div>
+</div>
+<div [ngSwitch]="selectedTab">
+  <app-home *ngSwitchCase="'home'"></app-home>
+  <app-admin *ngSwitchCase="'admin'"></app-admin>
+</div>

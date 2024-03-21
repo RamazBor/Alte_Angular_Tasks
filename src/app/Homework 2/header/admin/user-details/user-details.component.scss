@@ -1,0 +1,12 @@
+.user-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  width: 500px;
+  .image {
+    img {
+      width: 200px;
+    }
+  }
+}

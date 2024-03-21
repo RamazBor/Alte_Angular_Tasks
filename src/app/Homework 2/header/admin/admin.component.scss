@@ -1,0 +1,29 @@
+.admin-container {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  .admin-add-user {
+    input {
+      width: 200px;
+      height: 25px;
+      margin: 5px 5px 5px 0;
+    }
+    select {
+      width: 120px;
+      margin: 5px 5px 5px 0;
+      height: 28px;
+    }
+    button {
+      padding: 8px 20px;
+      background: #234d04;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+    }
+  }
+}
+
+hr {
+  margin-top: 20px;
+}

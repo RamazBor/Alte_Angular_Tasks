@@ -1,0 +1,11 @@
+<div class="admin-user-list">
+  <div class="admin-user-detail" *ngFor="let user of userList">
+    <div>{{ user.name }}</div>
+    <div>{{ user.gender }}</div>
+    <div>{{ user.subType }}</div>
+    <div [ngStyle]="{ color: user.status === 'Active' ? 'green' : 'red' }">
+      {{ user.status }}
+    </div>
+    <button (click)="ShowUserDetails(user)">Show User</button>
+  </div>
+</div>
